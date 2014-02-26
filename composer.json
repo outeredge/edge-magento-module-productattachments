@@ -1,0 +1,27 @@
+{
+    "name": "outeredge/edge-magento-module-productattachments",
+    "type": "magento-module",
+    "description": "Product Attachments Module by outer/edge",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "outer/edge",
+            "email": "support@outeredgeuk.com"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:outeredge/edge-magento-module-productattachments.git"
+        }
+    ],
+    "extra": {
+        "map": [
+            ["app/code/local/Edge/ProductAttachments", "app/code/local/Edge/ProductAttachments"],
+            ["app/etc/modules/Edge_ProductAttachments.xml", "app/etc/modules/Edge_ProductAttachments.xml"]
+        ]
+    }
+}
