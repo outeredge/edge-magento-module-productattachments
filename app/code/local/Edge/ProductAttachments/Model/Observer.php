@@ -51,7 +51,7 @@ class Edge_ProductAttachments_Model_Observer
         if (isset($_FILES['product']['name'][$name]) && (file_exists($_FILES['product']['tmp_name'][$name]))){
 
             try {
-                $uploader = new Varien_File_Uploader($name);
+                $uploader = new Mage_Core_Model_File_Uploader($name);
                 $image = $uploader->setAllowedExtensions(array('jpg','jpeg','gif','png','pdf','eps','doc','docx','csv','txt','xls','psd'))
                     ->setAllowRenameFiles(true)
                     ->setFilesDispersion(true)
