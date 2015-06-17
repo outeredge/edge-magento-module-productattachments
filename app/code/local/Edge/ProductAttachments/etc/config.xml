@@ -24,6 +24,15 @@
             </productattachments>
         </helpers>
     </global>
+    <default>
+        <system>
+            <media_storage_configuration>
+                <allowed_resources>
+                    <productattachment_image_folder>productattachment</productattachment_image_folder>
+                </allowed_resources>
+            </media_storage_configuration>
+        </system>
+    </default>
     <adminhtml>
         <events>
             <adminhtml_product_attribute_types>
